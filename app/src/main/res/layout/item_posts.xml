@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvItemPosts"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/post_title"
+            android:layout_width="374dp"
+            android:layout_height="86dp"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/holo_green_dark"
+            tools:text="Post Title" />
+
+        <TextView
+            android:id="@+id/post_body"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#424242"
+            android:textSize="16sp"
+            tools:text="Post Body" />
+
+        <Button
+            android:id="@+id/btnEdtPost"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/post_body"
+            android:text="Edit"
+            android:textColor="#303F9F" />
+
+        <ImageButton
+            android:id="@+id/btnDeletePost"
+            android:layout_height="28dp"
+            android:layout_width="28dp"
+            android:layout_below="@id/post_body"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete_24"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
